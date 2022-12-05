@@ -7,7 +7,9 @@
 ## About Me
 I want to learn Front-End Development in RSSchool! I want to develop in the IT field and work in it. 
 ## Skills
-  + Photoshop
+  + HTML
+  + CSS 
+  + JavaScript
   + MySQL
   + Git, GitHub
 ## Code example
