@@ -1,4 +1,17 @@
 html {
     font-size: 10px;
   }
-  
+
+  body {
+    @extend %font-prim;
+    @include font($size: 1.8rem, $height: 2.6rem);
+  }
+
+  h1 {
+    @include font($height: 5.4rem, $size: 4.4rem, $weight: 800);
+  }
+
+  h3 {
+  @include font($height: 6.4rem, $size: 5rem, $weight: 400);
+  color: $color-background;
+  }

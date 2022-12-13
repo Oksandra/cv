@@ -1,0 +1,22 @@
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.avatar-pic {
+    width: 40%;
+    border-radius: 80%;
+}
+
+.about-me__information {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    >h1 {
+     padding-bottom: 10px;
+    }
+}

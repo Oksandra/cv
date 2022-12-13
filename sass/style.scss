@@ -1,11 +1,19 @@
 @import "base/normalize";
 
+//Abstracts
+@import "abstracts/constants";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+
 //Base
 @import "base/base";
 @import "base/typography";
 @import "base/icons";
 
-//Abstracts
-@import "abstracts/constants";
-@import "abstracts/mixins";
-@import "abstracts/placeholders";
+//Layout
+@import "layout/header";
+@import "layout/wrapper";
+
+//Components
+@import "components/about-me";
+@import "components/navigation";
