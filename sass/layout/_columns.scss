@@ -1,0 +1,20 @@
+.main-container {
+    border-bottom: 12px solid $color-border;
+}
+
+
+.wrapper__main {
+    @extend %flex;
+}
+
+.first-column {
+    width: 40%;
+    background-color: $color-background;
+    text-align: center;
+}
+
+.second-column {
+    width: 55%;
+    padding: 0 25px;
+    text-align: left;
+}
