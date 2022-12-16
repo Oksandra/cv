@@ -4,14 +4,24 @@ html {
 
   body {
     @extend %font-prim;
-    @include font($size: 1.8rem, $height: 2.6rem);
+    @include font($size: 1.6rem, $height: 2.2rem);
   }
 
   h1 {
-    @include font($height: 5.4rem, $size: 4.4rem, $weight: 800);
+    @include font($height: 6rem, $size: 4.8rem, $weight: 600);
+    color: $color-text;
+  }
+
+  h2 {
+    @include font($height: 3.8rem, $size: 2.8rem, $weight: 400);
   }
 
   h3 {
-  @include font($height: 6.4rem, $size: 5rem, $weight: 400);
-  color: $color-background;
+   @include font($height: 3.3rem, $size: 2.6rem, $weight: 400);
+   color: $color-background;
+  }
+
+  h4 {
+    @include font($height: 2.8rem, $size: 1.8rem, $weight: 600);
+    color: $color-text; 
   }

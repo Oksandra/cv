@@ -1,0 +1,48 @@
+.footer {
+    background: $color-background;
+}
+
+.wrapper__footer {
+    @extend %flex;
+    padding: 20px 30px;
+}
+
+.github__link {
+    padding-left: 50px;
+    background: url("../../assets/icons/github_icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.school__link {
+    background: url("../../assets/icons/rs_school_js.svg");
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.github__text {
+    @include font($size: 2.5rem, $height: 3.5rem, $weight: 500);
+    color: $color-light;
+    position: relative;
+    padding-bottom: 4px;
+    &::before {
+        @extend %underscore;
+    }
+    &:hover::before {
+     transform: scaleX(1);
+   } 
+}
+
+.year__creation {
+    @include font($size: 2.5rem, $height: 3.5rem, $weight: 500);
+    color: $color-light;
+    position: relative;
+    padding-bottom: 4px;
+    &::before {
+        @extend %underscore;
+    }
+    &:hover::before {
+     transform: scaleX(1);
+   } 
+} 
