@@ -1,0 +1,344 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*--------------------*/
+body {
+  font-family: "Montserrat", Verdana, sans-serif;
+}
+
+.project__thumb, .container__project, .section__link, .navigation__link::before, .year__creation::before, .github__text::before {
+  transition: all 0.3s ease-in-out;
+}
+
+.container__projects, .navigation, .wrapper__about-me, .wrapper__footer, .wrapper__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navigation__link::before, .year__creation::before, .github__text::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+  transform: scaleX(0);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  color: #493b3b;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 3.3rem;
+  color: #aeaeca;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #493b3b;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../assets/fonts/montserrat-v25-latin-regular.woff2") format("woff2"), url("../assets/fonts/montserrat-v25-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-800 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: local(""), url("../assets/fonts/montserrat-v25-latin-800.woff2") format("woff2"), url("../assets/fonts/montserrat-v25-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500italic - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  src: local(""), url("../assets/fonts/montserrat-v25-latin-500italic.woff2") format("woff2"), url("../assets/fonts/montserrat-v25-latin-500italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+.header {
+  background: #aeaeca;
+  border-bottom: 12px solid #7b7b8e;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.main-container {
+  border-bottom: 12px solid #7b7b8e;
+}
+
+.first-column {
+  width: 40%;
+  background-color: #aeaeca;
+  text-align: center;
+}
+
+.second-column {
+  width: 55%;
+  padding: 0 25px;
+  text-align: left;
+}
+
+.footer {
+  background: #aeaeca;
+}
+
+.wrapper__footer {
+  padding: 20px 30px;
+}
+
+.github__link {
+  padding-left: 50px;
+  background: url("../assets/icons/github_icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.school__link {
+  background: url("../assets/icons/rs_school_js.svg");
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.github__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: #FFFFFF;
+  position: relative;
+  padding-bottom: 4px;
+}
+.github__text:hover::before {
+  transform: scaleX(1);
+}
+
+.year__creation {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: #FFFFFF;
+  position: relative;
+  padding-bottom: 4px;
+}
+.year__creation:hover::before {
+  transform: scaleX(1);
+}
+
+.about-me {
+  border-bottom: 12px solid #7b7b8e;
+}
+
+.wrapper__about-me {
+  padding: 20px;
+}
+
+.avatar__pic {
+  width: 25%;
+  border-radius: 80%;
+}
+
+.about-me__information {
+  width: 50%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-me__information > h1 {
+  padding-bottom: 10px;
+}
+
+.navigation {
+  padding: 20px;
+}
+
+.navigation__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: #FFFFFF;
+  position: relative;
+  padding-bottom: 4px;
+}
+.navigation__link:hover::before {
+  transform: scaleX(1);
+}
+
+.section__title {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+.section__title_dark {
+  color: #493b3b;
+}
+
+.section__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 12px;
+}
+.section__item:last-child {
+  margin-bottom: 0;
+}
+
+.section__link {
+  color: #000000;
+}
+.section__link:hover {
+  color: #FFFFFF;
+}
+
+.text__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+.container__projects {
+  padding: 0 0 20px 0;
+}
+
+.container__project {
+  width: 48%;
+  box-shadow: 0px 0px 10px #aeaeca;
+}
+.container__project:hover, .container__project :active {
+  box-shadow: 0px 0px 20px #363649;
+}
+.container__project:hover .project__thumb, .container__project :active .project__thumb {
+  transform: scale(1.05);
+}
+
+.img__container {
+  overflow: hidden;
+}
+
+.project__link > h4 {
+  text-align: center;
+  padding: 5px;
+}/*# sourceMappingURL=style.css.map */
