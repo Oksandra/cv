@@ -25,3 +25,9 @@ html {
     @include font($height: 2.8rem, $size: 1.8rem, $weight: 600);
     color: $color-text; 
   }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
