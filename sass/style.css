@@ -148,6 +148,12 @@ h4 {
   color: #493b3b;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /* montserrat-regular - latin */
 @font-face {
   font-family: "Montserrat";
